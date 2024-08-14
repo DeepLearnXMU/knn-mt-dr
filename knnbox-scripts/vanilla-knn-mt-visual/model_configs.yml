@@ -1,0 +1,43 @@
+# The knn-model's config using by web page
+# Arch now only support vanilla_knn_mt_visual@xxxxxx
+# xxxxx is decide by your base model's arch
+
+DE-EN[it]:
+  data_path: /home/demo/knn-box/data-bin/it
+  model_path: /home/demo/knn-box/pretrain-models/wmt19.de-en/wmt19.de-en.ffn8192.pt
+  arch: vanilla_knn_mt_visual@transformer_wmt19_de_en
+  knn_mode: inference
+  knn_datastore_path: /home/demo/knn-box/datastore/vanilla-visual/it
+  user_dir: /home/demo/knn-box/knnbox/models
+  bpe: fastbpe
+  bpe_codes: /home/demo/knn-box/pretrain-models/wmt19.de-en/ende30k.fastbpe.code
+  beam: "4"
+  lenpen: "0.6"
+  max_len_a: "1.2"
+  max_len_b: "10"
+  source_lang: de
+  target_lang: en
+  max_tokens: "1024"
+  scoring: sacrebleu
+  tokenizer: moses-de
+
+ZH-EN[laws]:
+  data_path: /home/demo/knn-box/data-bin/zh-en-laws
+  model_path: /home/demo/knn-box/pretrain-models/zh-en/pretrained.pt
+  arch: vanilla_knn_mt_visual@transformer_zh_en
+  knn_mode: inference
+  knn_datastore_path: /home/demo/knn-box/datastore/vanilla-visual/zh-en-laws
+  user_dir: /home/demo/knn-box/knnbox/models
+  bpe: fastbpe
+  bpe_codes: /home/demo/knn-box/pretrain-models/zh-en/codes.zh
+  beam: "4"
+  lenpen: "0.6"
+  max_len_a: "1.2"
+  max_len_b: "10"
+  source_lang: zh
+  target_lang: en
+  max_tokens: "1024"
+  scoring: sacrebleu
+  tokenizer: jieba
+
+
