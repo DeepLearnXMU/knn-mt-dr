@@ -68,10 +68,16 @@ You can refer to [kNN-box](https://github.com/NJUNLP/knn-box) for more detailed 
 ## Citation
 If you found this repository helpful in your research, please consider citing:
 ```bibtex
-@article{gao2024efficient,
-  title={Efficient k-Nearest-Neighbor Machine Translation with Dynamic Retrieval},
-  author={Gao, Yan and Cao, Zhiwei and Miao, Zhongjian and Yang, Baosong and Liu, Shiyu and Zhang, Min and Su, Jinsong},
-  journal={arXiv preprint arXiv:2406.06073},
-  year={2024}
+@inproceedings{gao-etal-2024-efficient,
+    title = "Efficient $k$-Nearest-Neighbor Machine Translation with Dynamic Retrieval",
+    author = "Gao, Yan  and
+      Cao, Zhiwei  and
+      Miao, Zhongjian  and
+      Yang, Baosong  and
+      Liu, Shiyu  and
+      Zhang, Min  and
+      Su, Jinsong",
+    booktitle = "Findings of the Association for Computational Linguistics ACL 2024",
+    year = "2024",
 }
 ```
